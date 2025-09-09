@@ -1,0 +1,120 @@
+.project-section {
+  padding: 80px 10%;
+  background: linear-gradient(to right, #2e026d, #000000, #9d174d);
+  color: #fff;
+  min-height: 100vh;
+}
+
+.project-heading {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 50px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+}
+
+/* Project Card */
+.project-card {
+  perspective: 1000px;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.6s ease;
+}
+
+.project-card.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  transform-style: preserve-3d;
+  transition: transform 0.8s ease;
+  border-radius: 20px;
+}
+
+.project-card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Front & Back must overlap */
+.card-front,
+.card-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  backface-visibility: hidden;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Front */
+.card-front img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.6);
+  text-align: center;
+}
+
+.card-overlay h3 {
+  font-size: 1.5rem;
+  margin: 0;
+  color: #fff;
+}
+
+/* Back */
+.card-back {
+  background: linear-gradient(to right, #2e026d, #000000, #9d174d);
+  color: #fff;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.card-back h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.card-back p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.card-back a {
+  margin-top: 10px;
+  display: inline-block;
+  padding: 8px 20px;
+  background: #4f46e5;
+  color: #fff;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.card-back a:hover {
+  background: #6366f1;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #6366f1;
+}

@@ -1,0 +1,16 @@
+/* Logo Image Styling */
+.logo-img {
+  width: 50px;       /* adjust size */
+  height: 50px;      /* keep it square */
+  object-fit: contain;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Focus/hover effect */
+.logo-img:hover,
+.logo-img:focus {
+  transform: scale(1.2); /* zoom effect */
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.8); /* glowing effect */
+  border-radius: 50%; /* optional: circular look */
+}
