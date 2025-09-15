@@ -54,6 +54,7 @@ const About = () => {
             </div>
             <button className="download-btn">
               <i className="fa-solid fa-download" style={{ marginRight: "7px" }}></i>
+               <a href="/JananiK Resume.pdf"></a>
               Download CV
             </button>
           </div>

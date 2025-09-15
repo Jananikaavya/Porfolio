@@ -296,7 +296,7 @@ export default function Hero() {
 
             {/* Buttons */}
             <div className="hero-buttons">
-              <a href="/resume.pdf" className="btn resume-btn">
+              <a href="/JananiK Resume.pdf" className="btn resume-btn">
                 <FaDownload /> Resume
               </a>
               <button onClick={toggleExpand} className="btn explore-btn">
