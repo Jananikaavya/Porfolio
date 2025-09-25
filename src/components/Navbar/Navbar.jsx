@@ -59,7 +59,7 @@ export default function Navbar() {
             <FontAwesomeIcon icon={faGithub} />
           </a>
           <a
-            href="https://www.linkedin.com/in/janani-kaavya-b8170b285/"
+            href="https://www.linkedin.com/in/janucodegirl/"
             target="_blank"
             rel="noopener noreferrer"
             className="icon"
@@ -68,7 +68,7 @@ export default function Navbar() {
           </a>
            
             <a
-            href="jananikaavya1104@gmail.com"
+            href="jan.devcodes@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
             className="icon"

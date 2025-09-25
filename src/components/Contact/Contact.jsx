@@ -53,7 +53,7 @@ const Contact = () => {
 
           <div className="social-links">
             <a href="https://github.com/jananikaavya" target="_blank" rel="noreferrer">🌐 GitHub</a>
-            <a href="https://www.linkedin.com/in/janani-kaavya-b8170b285/" target="_blank" rel="noreferrer">💼 LinkedIn</a>
+            <a href="https://www.linkedin.com/in/janucodegirl/" target="_blank" rel="noreferrer">💼 LinkedIn</a>
             <a href="https://x.com/JananiKaavya" target="_blank" rel="noreferrer">🐦 Twitter</a>
           </div>
         </div>
